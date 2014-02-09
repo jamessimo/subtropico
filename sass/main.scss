@@ -1,0 +1,564 @@
+/* ==========================================================================
+   SUBTROPICO SASS SHEET
+   ========================================================================== */
+
+$blue: #0B61A4;
+$blue-pastel: #3F92D2;
+$blue-dark: #25567B;
+
+
+$orange: #FF9200;
+$orange-pastel: #FFAD40;
+$orange-dark: #BF8230;
+$orange-light: #FFC373;
+
+$brown: #A65F00;
+
+html,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+strong{
+	font-weight: bold;
+}
+
+::-moz-selection {
+    background: $orange-pastel;
+    text-shadow: none;
+    color: white;
+}
+
+::selection {
+    background: $orange-pastel;
+    text-shadow: none;
+    color: white;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+body {
+    font: 16px/26px 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+header{
+	background: $blue-pastel;
+	border-bottom: 5px solid $blue-dark;
+	margin-bottom: 40px;
+}
+
+footer{
+	font-size: 75%;
+	background: #0B61A4;
+	color: #66A3D2;
+	margin-top: 40px;
+	
+	.wrapper{
+		padding: 10px 0;
+	}
+}
+
+h1{
+	font-size: 250%;
+}
+h2{
+	font-size: 150%;
+}
+h1,h2{
+	margin: 0;
+}
+h3{
+	font-size: 130%;
+}
+#logo{
+	padding: 10px 0;
+}
+
+dl{
+	margin: 20px 0;
+}
+dt{
+	font-weight: bold;
+}
+
+
+/* ===================
+    Home Page
+   =================== */
+
+
+#home,
+#productBanner{
+	background: transparent url('../img/bg.jpg') no-repeat left -390px;
+	background-size: cover;
+	color: #fff;
+}
+
+#home{
+	aside{
+		text-align: center;
+	}
+	.inner{
+		float: left;
+		width: 50%;
+	}
+}
+
+
+/* ===================
+    Products Page
+   =================== */
+
+#product-page header{
+	margin-bottom: 0px;
+}
+#productBanner{
+	
+	position: relative;
+	z-index: -1;
+	box-shadow: inset 0px -10px 10px -6px rgba(0,0,0,0.35),
+				inset 0px 10px 10px -6px rgba(0,0,0,0.35);
+	&.low-spf{
+		background-position: left top;
+	}
+	&.med-spf{
+		background-position: left -100px;
+		margin: 5px 0;
+	}
+	&.high-spf{
+		background-position: left -300px;
+		margin: 5px 0;
+	}
+	&.no-spf{
+		background-position: left -500px;
+		margin: 5px 0;
+	}
+	.inner{
+		display: table-cell;
+		height: 200px;
+		vertical-align: middle;
+		position: relative;
+	}
+}
+
+/*Single Product*/
+.product{
+	height: 100%;
+	display: inline-block;
+	background: #f5f5f5;
+	color: #333;
+	padding: 2%;
+	margin: 5px;
+
+	position: relative;
+	
+	.image{ 
+		float: left;
+		width: 150px;
+		padding-right: 20px;
+	}
+	span{
+		font-weight: 100;
+		font-size: 80%;
+	}
+	
+	.button-wrapper{
+		width: 90px;
+		height: 40px;
+		position: relative;
+		float: right;
+	}
+	.ecom{
+		button{
+			background: $orange;
+			border: none;
+			padding: 10px;
+			color: #fff;
+			border-radius: 10px;
+			box-shadow: 2px 2px $brown;
+			text-shadow: 0px 1px $brown;
+			position: relative;
+		}
+		button:hover{
+			background: $orange-dark;
+			box-shadow: none;
+			margin: 2px 2px;
+			
+		}
+	}
+}
+
+
+
+#out-of-stock{
+	text-align: center;
+}
+
+
+dd span{
+font-weight: bold;
+}
+
+
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav{ 
+
+	ul {
+    	margin: 0;
+    	padding: 0;
+    }
+    a {
+        display: block;
+        margin-bottom: 10px;
+        padding: 15px 0;
+    
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    
+        color: white;
+      
+    }
+    
+    a:hover,
+    a:visited {
+        color: white;
+    }
+    a.active,
+    a:hover {
+        text-decoration: none;
+        background: $orange-light;
+        color: $blue-dark;
+    }
+}
+
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+    
+    article h1 {
+        font-size: 2em;
+    }
+}
+
+
+.footer-container footer {
+    color: white;
+    padding: 5px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+   
+   
+   #logo{
+   		float:left;
+   }
+	header{
+		height: 90px;
+	}
+    nav {
+    	float:right;
+    	width:75%;
+	    a {
+	        float: left;
+	        width: 20%;
+	        padding: 33px 2%;
+	        margin-bottom: 0;
+	    }
+		a.active,
+		a:hover {
+	   		border-bottom: 5px solid $orange;
+		}
+	
+	    li:first-child a {
+	        margin-left: 0;
+	    }
+	
+	    li:last-child a {
+	        margin-right: 0;
+	    }
+	    
+		/* ========================
+	    	INTERMEDIATE: IE Fixes
+	   	======================== */
+	
+	    ul li {
+	        display: inline;
+	    }
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+    
+    .god{
+    	float: right;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 60%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 50%;
+    }
+
+    .main aside {
+        float: right;
+        width: 45%;
+    }
+    
+    /* Product Page */
+    .product{
+    	width: 44%;
+    	float: left;
+    	min-height: 375px;
+    	display: block;
+    	
+    	&.question{
+    		min-height: 344px;
+    	}
+    	&.ev{
+    		float: right;
+    	}
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+    .product{
+    	width: 45%;
+    }
+  
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
