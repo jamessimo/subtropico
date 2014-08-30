@@ -2,10 +2,13 @@
    SUBTROPICO SASS SHEET
    ========================================================================== */
 
+@import "compass/utilities/sprites";
+@import "logo/*.png";
+@include all-logo-sprites;
+
 $blue: #0B61A4;
 $blue-pastel: #3F92D2;
 $blue-dark: #25567B;
-
 
 $orange: #FF9200;
 $orange-pastel: #FFAD40;
@@ -122,6 +125,9 @@ dl{
 dt{
 	font-weight: bold;
 }
+a{
+	color: $orange;
+}
 
 
 /* ===================
@@ -131,7 +137,7 @@ dt{
 
 #home,
 #productBanner{
-	background: transparent url('../img/bg.jpg') no-repeat left -390px;
+	background: transparent url('../img/bg.jpg') no-repeat left 70%;
 	background-size: cover;
 	color: #fff;
 }
@@ -191,7 +197,6 @@ dt{
 	color: #333;
 	padding: 2%;
 	margin: 5px;
-
 	position: relative;
 	
 	.image{ 
@@ -238,7 +243,7 @@ dt{
 
 
 dd span{
-font-weight: bold;
+	font-weight: bold;
 }
 
 
@@ -286,7 +291,6 @@ nav{
 
 .main {
     padding: 30px 0;
-    
     article h1 {
         font-size: 2em;
     }

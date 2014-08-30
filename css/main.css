@@ -1,6 +1,18 @@
 /* ==========================================================================
    SUBTROPICO SASS SHEET
    ========================================================================== */
+.logo-sprite, .logo-logo_l, .logo-logo_w_s {
+  background: url('/img/logo-s7a07dec63a.png') no-repeat;
+}
+
+.logo-logo_l {
+  background-position: 0 0;
+}
+
+.logo-logo_w_s {
+  background-position: 0 -541px;
+}
+
 html,
 input,
 select,
@@ -113,12 +125,16 @@ dt {
   font-weight: bold;
 }
 
+a {
+  color: #ff9200;
+}
+
 /* ===================
     Home Page
    =================== */
 #home,
 #productBanner {
-  background: transparent url("../img/bg.jpg") no-repeat left -390px;
+  background: transparent url("../img/bg.jpg") no-repeat left 70%;
   background-size: cover;
   color: #fff;
 }
